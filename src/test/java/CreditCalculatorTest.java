@@ -10,7 +10,7 @@ public class CreditCalculatorTest {
     public void testConcat_getMonthPayment_validArgument_success() {
         final Integer monthPayment = 110;
         CreditCalculator calculator = new CreditCalculator();
-        final Integer res = calculator.getMonthPayment(1000,12,10);
+        final Integer res = calculator.getMonthPayment(1000, 12, 10);
         Assertions.assertEquals(monthPayment, res);
     }
 
@@ -18,7 +18,7 @@ public class CreditCalculatorTest {
     public void testConcat_getMonthPayment_validType_success() {
         final Integer monthPayment = 0;
         CreditCalculator calculator = new CreditCalculator();
-        Assertions.assertEquals(monthPayment.getClass(), calculator.getMonthPayment(0,0,0).getClass());
+        Assertions.assertEquals(monthPayment.getClass(), calculator.getMonthPayment(0, 0, 0).getClass());
 
     }
 
@@ -26,7 +26,7 @@ public class CreditCalculatorTest {
     public void testConcat_getMonthPayment_nullArgument_throwsException() {
         CreditCalculator calculator = new CreditCalculator();
         assertThrows(NullPointerException.class, () -> {
-            calculator.getMonthPayment(null,null,null);
+            calculator.getMonthPayment(null, null, null);
         });
     }
 
@@ -34,7 +34,7 @@ public class CreditCalculatorTest {
     public void testConcat_getFullSumm_validArgument_success() {
         final int fullSumm = 1100;
         CreditCalculator calculator = new CreditCalculator();
-        final int res = calculator.getFullSumm(1000,12,10);
+        final int res = calculator.getFullSumm(1000, 12, 10);
         Assertions.assertEquals(fullSumm, res);
     }
 
@@ -42,7 +42,7 @@ public class CreditCalculatorTest {
     public void testConcat_getFullSumm_validType_success() {
         final Integer fullSumm = 0;
         CreditCalculator calculator = new CreditCalculator();
-        Assertions.assertEquals(fullSumm.getClass(), calculator.getFullSumm(0,0,0).getClass());
+        Assertions.assertEquals(fullSumm.getClass(), calculator.getFullSumm(0, 0, 0).getClass());
 
     }
 
@@ -50,7 +50,7 @@ public class CreditCalculatorTest {
     public void testConcat_getFullSumm_nullArgument_throwsException() {
         CreditCalculator calculator = new CreditCalculator();
         assertThrows(NullPointerException.class, () -> {
-            calculator.getFullSumm(null,null,null);
+            calculator.getFullSumm(null, null, null);
         });
     }
 
@@ -58,7 +58,7 @@ public class CreditCalculatorTest {
     public void testConcat_getOverPayment_validArgument_success() {
         final int overPayment = 100;
         CreditCalculator calculator = new CreditCalculator();
-        final int res = calculator.getOverPayment(1000,12,10);
+        final int res = calculator.getOverPayment(1000, 12, 10);
         Assertions.assertEquals(overPayment, res);
     }
 
@@ -66,7 +66,7 @@ public class CreditCalculatorTest {
     public void testConcat_getOverPayment_validType_success() {
         final Integer overPayment = 0;
         CreditCalculator calculator = new CreditCalculator();
-        Assertions.assertEquals(overPayment.getClass(), calculator.getOverPayment(0,0,0).getClass());
+        Assertions.assertEquals(overPayment.getClass(), calculator.getOverPayment(0, 0, 0).getClass());
 
     }
 
@@ -74,11 +74,9 @@ public class CreditCalculatorTest {
     public void testConcat_getOverPayment_nullArgument_throwsException() {
         CreditCalculator calculator = new CreditCalculator();
         assertThrows(NullPointerException.class, () -> {
-            calculator.getOverPayment(null,null,null);
+            calculator.getOverPayment(null, null, null);
         });
     }
-
-
 
 
 }
